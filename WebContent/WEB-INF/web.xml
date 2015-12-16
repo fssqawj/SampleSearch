@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   
+    http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">  
+  
+    <servlet>  
+        <servlet-name>Servlet</servlet-name>  
+        <servlet-class>com.weijie.Test</servlet-class>  
+        <load-on-startup>0</load-on-startup>  
+    </servlet> 
+    <servlet>  
+        <servlet-name>Showdetail</servlet-name>  
+        <servlet-class>com.weijie.Showdetail</servlet-class>  
+        <load-on-startup>0</load-on-startup>  
+    </servlet> 
+    <servlet-mapping>  
+        <servlet-name>Servlet</servlet-name>  
+        <url-pattern>/show</url-pattern>  
+    </servlet-mapping>  
+    <servlet-mapping>  
+        <servlet-name>Showdetail</servlet-name>  
+        <url-pattern>/detail</url-pattern>  
+    </servlet-mapping>
+</web-app>  
